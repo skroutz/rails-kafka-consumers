@@ -1,0 +1,20 @@
+[Unit]
+Description=Kafka consumer for MyApp (%I)
+Wants=network-online.target rafka.service
+After=rafka.service
+
+[Service]
+Type=notify
+SyslogIdentifier=kafka-consumer@%i
+ExecStart=/usr/bin/bundle exec rake kafka:consumer[%I]
+WorkingDirectory=/var/sites/my_app/current
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+NotifyAccess=main
+WatchdogSec=600
+MemoryAccounting=true
+CPUAccounting=true
+
+[Install]
+WantedBy=multi-user.target

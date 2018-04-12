@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+# Ruby driver for Rafka
+gem "rafka", "~> 0.0.10"
+
+# Ruby implementation of systemd sd_notify(3)
+gem "sd_notify", "~> 0.0.1"
+
+# TODO: remove when 'sd_notify' gem supports watchdogs
+gem "systemd-daemon", "0.0.3"

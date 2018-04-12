@@ -1,0 +1,16 @@
+# This file defines which Kafka consumers run on production.
+# It also defines how many instances run in each server.
+#
+# Each entry represents an enabled consumer and results in a relevant rake task
+# spawned (provided scale is > 0) in the involved Capistrano hosts (see example
+# below).
+#
+# To disable a consumer, it is sufficient to comment it out or lower its scale
+# to 0.
+#
+
+# The following would result in 2 instances of the consumer located at
+# Rails.root/kafka/sample_consumer.rb being spawned on each Capistrano consumer
+# host.
+- name: "sample"
+  scale: 2

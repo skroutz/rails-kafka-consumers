@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rafka (0.0.10)
+      redis (~> 3.0)
+    redis (3.3.5)
+    sd_notify (0.0.1)
+    systemd-daemon (0.0.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rafka (~> 0.0.10)
+  sd_notify (~> 0.0.1)
+  systemd-daemon (= 0.0.3)
+
+BUNDLED WITH
+   1.13.6
