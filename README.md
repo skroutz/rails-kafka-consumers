@@ -1,6 +1,6 @@
-Companion source code demonstrated in https://engineering.skroutz.gr/blog/kafka-rails-integration/.
+Companion source code to https://engineering.skroutz.gr/blog/kafka-rails-integration/.
 
-Links:
+Further links:
 
 - [Rafka](https://github.com/skroutz/rafka)
 - [rafka-rb](https://github.com/skroutz/rafka-rb)
